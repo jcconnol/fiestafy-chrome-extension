@@ -3,18 +3,35 @@ document.addEventListener('DOMContentLoaded', function() {
     var mouseCursorDropdown = document.getElementsByClassName('mouse-cursor-dropdown')[0];
     var playErrorIntervalInput = document.getElementsByClassName('play-error-interval-number')[0];
 
+
+    
+
     chrome.storage.sync.get([
-        "christmasToggle"
+        "christmasToggle",
+        "holidayRange"
     ], function(items){
-        document.getElementsById('christmas-toggle')[0].checked = items.christmasToggle;
+        document.getElementById('christmas-toggle').checked = items.christmasToggle;
+        document.getElementById("holiday-level-slider").value = items.holidayRange
+        document.getElementById("holiday-range").innerHTML = items.holidayRange
     });
 
-    $('.switch .holiday-switch').click(function(event) {
+    var slider = document.getElementById("holiday-level-slider");
+    var output = document.getElementById("holiday-range");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+        chrome.storage.sync.set({
+            ["holidayRange"]: this.value
+        })
+        
+        output.innerHTML = this.value;
+    }
+
+    $('.switch .holiday-toggle').click(function(event) {
         var inputClicked = event.target;
         var key = null;
         var value = event.target.checked;    
-
-        if(inputClicked.matches(".christmas-pics")){
+        
+        if(inputClicked.matches("#christmas-toggle")){
             key = "christmasToggle";
         }
         
