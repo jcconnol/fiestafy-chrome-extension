@@ -1,0 +1,45 @@
+{
+    "manifest_version": 2,
+    "name": "Fiestafy Extension",
+    "description": "Making sites you visit a little more festive for holidays.",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+     "default_popup": "popup.html",
+     "default_icon": {
+        "19": "images/icon2.png",
+        "38": "images/icon2.png"
+      }
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "storage",
+        "input"
+    ],
+    "icons": { 
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "web_accessible_resources": [
+        "cageImgs/*",
+        "cursorFiles/*",
+        "dogeImgs/*",
+        "soundFiles/*",
+        "noNetwork.html",
+        "emojiData.json",
+        "ieAlert.html"
+    ]
+  }
