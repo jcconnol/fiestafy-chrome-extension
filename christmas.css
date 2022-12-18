@@ -32,14 +32,14 @@
 #christmas-images-container #christmas-tree-image {
     position: fixed;
     bottom: 0;
-    right: 0px;
+    left: 70%;
     height: 40%;
 }
 
 #christmas-images-container #elf-cat-gif {
     position: fixed;
     height: 14%;
-    left: 10%;
+    left: 8%;
     bottom: 0;
 }
 
@@ -80,4 +80,125 @@
     height: 25%;
     right: 20%;
     bottom: 0px;
+}
+
+
+#christmas-images-container #red-present-img {
+    position: fixed;
+    height: 14%;
+    left: 71%;
+    bottom: 0;
+}
+
+#christmas-images-container #red-present-img-2 {
+    position: fixed;
+    height: 14%;
+    left: 0%;
+    bottom: 0;
+}
+
+#christmas-images-container #gingerbread-cat-gif {
+    position: fixed;
+    height: 14%;
+    bottom: 9.5%;
+    left: -2%;
+}
+
+#christmas-images-container #snowman-img {
+    position: fixed;
+    height: 26%;
+    bottom: 0;
+    left: 15%;
+}
+
+#christmas-images-container #heavy-snow-gif {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    right: 20%;
+    top: 0px;
+    pointer-events: none;
+}
+
+#christmas-images-container #heavy-snow-gif-2 {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+    left: -5%;
+    top: 0px;
+    pointer-events: none;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+@keyframes santa-animation
+{
+    0% {
+        left: 200%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    50% {
+        left: -100%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    51% {
+        left: -100%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+    100% {
+        left: 200%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+}
+
+@keyframes penguin-animation
+{
+    0% {
+        left: 115%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+    50% {
+        left: -30%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+    51% {
+        left: -30%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    100% {
+        left: 115%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+}
+
+#christmas-images-container #santa-sleigh-img {
+    position: fixed;
+    height: 60%;
+    bottom: 35%;
+    left: -100%;
+    animation: santa-animation 25s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+#christmas-images-container #penguin-gif {
+    position: fixed;
+    height: 10%;
+    bottom: -1%;
+    left: -100%;
+    animation: penguin-animation 200s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
 }

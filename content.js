@@ -2,17 +2,17 @@ var holidayRange = 0;
 
 var width = document.width;
 var imgObj = null;
-function init(){
-    imgObj = document.getElementById('penguin-gif');
-    imgObj.style.left = '0px';
-}   
+// function init(){
+//     imgObj = document.getElementById('penguin-gif');
+//     imgObj.style.left = '0px';
+// }   
 
-function moveRight(){
-    imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
-    setTimeout(function(){
-        console.log("Hello World");
-    }, 100);
-}
+// function moveRight(){
+//     imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+//     setTimeout(function(){
+//         console.log("Hello World");
+//     }, 100);
+// }
 
 
 runFiestafy();
@@ -50,7 +50,6 @@ function runChristmas(){
     }
 
     if (holidayRange >= 2) {
-        //TODO WIP
         hangingLightsImagePath = chrome.extension.getURL('/christmasImgs/hanging-lights.png')
         document.getElementById("christmas-images-container").innerHTML += 
             "<div id=\"hanging-lights-img\"></div>"
@@ -66,17 +65,23 @@ function runChristmas(){
     }
 
     if (holidayRange >= 3) {
-        // gingerbreadCatImagePath = chrome.extension.getURL('/christmasImgs/gingerbread-cat.gif')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + gingerbreadCatImagePath + "\" id=\"gingerbread-cat-gif\">"
+        redPresentImagePath = chrome.extension.getURL('/christmasImgs/red-present.png')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + redPresentImagePath + "\" id=\"red-present-img\">"
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + redPresentImagePath + "\" id=\"red-present-img-2\">"
+        
+        gingerbreadCatImagePath = chrome.extension.getURL('/christmasImgs/gingerbread-cat.gif')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + gingerbreadCatImagePath + "\" id=\"gingerbread-cat-gif\">"
 
-        // redPresentImagePath = chrome.extension.getURL('/christmasImgs/red-present.png')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + redPresentImagePath + "\" id=\"red-present-img\">"
+        snowmanImagePath = chrome.extension.getURL('/christmasImgs/snowman.png')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + snowmanImagePath + "\" id=\"snowman-img\">"
 
-        // snowmanImagePath = chrome.extension.getURL('/christmasImgs/snowman.png')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + snowmanImagePath + "\" id=\"snowman-img\">"
+        penguinImagePath = chrome.extension.getURL('/christmasImgs/penguin.gif')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + penguinImagePath + "\" id=\"penguin-gif\">"
     }
 
     if (holidayRange >= 4) {
@@ -87,23 +92,17 @@ function runChristmas(){
     }
 
     if (holidayRange >= 5) {
-        // penguinImagePath = chrome.extension.getURL('/christmasImgs/penguin.gif')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + penguinImagePath + "\" id=\"penguin-gif\">"
+        heavySnowImagePath = chrome.extension.getURL('/christmasImgs/heavy-snow.gif')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<div id=\"heavy-snow-gif\"></div>"
+        document.getElementById("heavy-snow-gif").style.backgroundImage = "url(" + heavySnowImagePath + ")"
 
-        // heavySnowImagePath = chrome.extension.getURL('/christmasImgs/heavy-snow.gif')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + heavySnowImagePath + "\" id=\"heavy-snow-gif\">"
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<div id=\"heavy-snow-gif-2\"></div>"
+        document.getElementById("heavy-snow-gif-2").style.backgroundImage = "url(" + heavySnowImagePath + ")"
 
-        // santaSleighImagePath = chrome.extension.getURL('/christmasImgs/santa-sleigh.png')
-        // document.getElementById("christmas-images-container").innerHTML += 
-        //     "<img src=\"" + santaSleighImagePath + "\" id=\"santa-sleigh-img\">"
+        santaSleighImagePath = chrome.extension.getURL('/christmasImgs/santa-sleigh.png')
+        document.getElementById("christmas-images-container").innerHTML += 
+            "<img src=\"" + santaSleighImagePath + "\" id=\"santa-sleigh-img\">"
     }    
 }
-
-// document.onload = function(){
-//     for(var i = 0; i < 1000+50; i=i+10){
-//         init()
-//         moveRight()
-//     }
-// }
