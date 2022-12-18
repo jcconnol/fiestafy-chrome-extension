@@ -1,5 +1,10 @@
 #christmas-images-container {
-    position: relative;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 #christmas-images-container #christmas-penguin-gif {
@@ -11,21 +16,59 @@
     pointer-events: none;
 }
 
-
-#christmas-images-container #christmas-penguin-gif {
+#christmas-images-container img {
     position: fixed;
+    pointer-events: none;
+    z-index: 100;
+}
+
+#christmas-images-container #penguin-gif {
     bottom: -1%;
     right: 0px;
-    z-index: 100;
     height: 15%;
-    pointer-events: none;
 }
 
 #christmas-images-container #christmas-tree-image {
-    position: fixed;
     bottom: 0;
     right: 0px;
-    z-index: 100;
     height: 40%;
+}
+
+#christmas-images-container #elf-cat-gif {
+    height: 14%;
+    left: 10%;
+    bottom: 0;
+}
+
+/* #christmas-images-container #hanging-lights-img {
+    width: 100%;
+    bottom: 0;
+
+} */
+
+#christmas-images-container #light-snow-gif {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 10000;
     pointer-events: none;
+}
+
+#christmas-images-container #left-holly-img {
+    width: 30%;
+}
+
+#christmas-images-container #right-holly-img {
+    width: 30%;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#christmas-images-container #santa-img {
+    height: 25%;
+    right: 20%;
+    bottom: 0px;
 }
