@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ], function(items){
         document.getElementById('christmas-toggle').checked = items.christmasToggle;
         document.getElementById("holiday-level-slider").value = items.holidayRange
-        document.getElementById("holiday-range").innerHTML = items.holidayRange
+        document.getElementById("holiday-range").textContent = items.holidayRange
     });
 
     var slider = document.getElementById("holiday-level-slider");
