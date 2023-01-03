@@ -42,6 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if(inputClicked.matches("#christmas-toggle")){
             key = "christmasToggle";
         }
+
+        if(inputClicked.matches("#valentines-toggle")){
+            key = "valentinesToggle";
+        }
+
+        if(inputClicked.matches("#independence-day-toggle")){
+            key = "independenceDayToggle";
+        }
         
         if(key){
             chrome.storage.sync.set({
