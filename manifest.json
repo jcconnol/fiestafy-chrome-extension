@@ -3,14 +3,15 @@
     "name": "Fiestafy Extension",
     "description": "Making sites you visit a little more festive for holidays.",
     "version": "1.0",
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
     "action": {
         "default_title": "Click to open Fiestafy Extension popup",
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "images/icon.png",
-            "24": "images/icon.png",
-            "32": "images/icon.png"
-        }
+        "default_popup": "popup.html"
     },
     "content_scripts": [
         {
@@ -18,7 +19,11 @@
             "js": [
                 "content.js"
             ],
-            "css" : ["christmas.css"]
+            "css" : [
+                "christmas/christmas.css",
+                "valentines/valentines.css",
+                "independence-day/independence.css"
+            ]
         }
     ],
     "permissions": [
@@ -29,11 +34,17 @@
     ],
     "web_accessible_resources": [
         {
-            "resources": ["/christmasImgs/*", "/soundFiles/*", "/images/*"],
+            "resources": [ 
+                "/soundFiles/*", 
+                "/images/*",
+                "/christmas/*", 
+                "/valentines/*", 
+                "/independence-day/*"
+            ],
             "matches": ["<all_urls>"]
         }
     ]
-  }
+}
 
 
   

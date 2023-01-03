@@ -8,9 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     chrome.storage.sync.get([
         "christmasToggle",
+        "valentinesToggle",
+        "independenceDayToggle",
         "holidayRange"
     ], function(items){
         document.getElementById('christmas-toggle').checked = items.christmasToggle;
+        document.getElementById('valentines-toggle').checked = items.valentinesToggle;
+        document.getElementById('independence-toggle').checked = items.independenceDayToggle;
         document.getElementById("holiday-level-slider").value = items.holidayRange
         document.getElementById("holiday-range").textContent = items.holidayRange
     });
@@ -25,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         output.innerHTML = this.value;
     }
+
+    chrome.storage.sync.set({
+        "chromeExtensionURL": chrome.runtime.getURL('/')
+    });
 
     $('.switch .holiday-toggle').click(function(event) {
         var inputClicked = event.target;
