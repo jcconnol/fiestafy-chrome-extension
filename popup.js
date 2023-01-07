@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var mouseCursorDropdown = document.getElementsByClassName('mouse-cursor-dropdown')[0];
     var playErrorIntervalInput = document.getElementsByClassName('play-error-interval-number')[0];
 
-
-    
-
     chrome.storage.sync.get([
         "christmasToggle",
         "valentinesToggle",
@@ -14,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ], function(items){
         document.getElementById('christmas-toggle').checked = items.christmasToggle;
         document.getElementById('valentines-toggle').checked = items.valentinesToggle;
-        document.getElementById('independence-toggle').checked = items.independenceDayToggle;
+        document.getElementById('independence-day-toggle').checked = items.independenceDayToggle;
         document.getElementById("holiday-level-slider").value = items.holidayRange
         document.getElementById("holiday-range").textContent = items.holidayRange
     });

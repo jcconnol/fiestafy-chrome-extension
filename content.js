@@ -33,7 +33,6 @@ function runFiestafy(){
         if(items.independenceDayToggle == true || items.independenceDayToggle == "true"){
             runIndependenceDay();
         }
-
     });
 }
 
