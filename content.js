@@ -135,36 +135,37 @@ function runValentines(){
         document.getElementById("valentines-images-container").innerHTML += 
             "<div id=\"heart-banner-image\"></div>"
         document.getElementById("heart-banner-image").style.backgroundImage = "url(" + heartBannerImagePath + ")"
+
+        milkShakeImagePath = getExtensionURL('valentines/milk-shake.png')
+        document.getElementById("valentines-images-container").innerHTML += 
+            "<img src=\"" + milkShakeImagePath + "\" id=\"milk-shake-image\">"
+    }
+
+    if (holidayRange >= 3) {
+        heartLetterImagePath = getExtensionURL('valentines/heart-letter.png')
+        document.getElementById("valentines-images-container").innerHTML += 
+            "<img src=\"" + heartLetterImagePath + "\" id=\"heart-letter-image\">"
+
+        heartGunImagePath = getExtensionURL('valentines/heart-gun.gif')
+        document.getElementById("valentines-images-container").innerHTML += 
+            "<img src=\"" + heartGunImagePath + "\" id=\"heart-gun-image\">"
+    }
+
+    if (holidayRange >= 4) {
+        heartGardenImagePath = getExtensionURL('valentines/heart-garden.png')
+        document.getElementById("valentines-images-container").innerHTML += 
+            "<div id=\"heart-garden-image\"></div>"
+        document.getElementById("heart-garden-image").style.backgroundImage = "url(" + heartGardenImagePath + ")"
     }
 
     if (holidayRange >= 5){
         arrowImagePath = getExtensionURL('valentines/arrow.png')
         document.getElementById("valentines-images-container").innerHTML += 
             "<img src=\"" + arrowImagePath + "\" id=\"arrow-image\">"
-    
-        
-
-        
-
-        heartGardenImagePath = getExtensionURL('valentines/heart-garden.png')
-        document.getElementById("valentines-images-container").innerHTML += 
-            "<img src=\"" + heartGardenImagePath + "\" id=\"heart-garden-image\">"
-
-        heartGunImagePath = getExtensionURL('valentines/heart-gun.png')
-        document.getElementById("valentines-images-container").innerHTML += 
-            "<img src=\"" + heartGunImagePath + "\" id=\"heart-gun-image\">"
 
         heartHotAirImagePath = getExtensionURL('valentines/heart-hot-air.png')
         document.getElementById("valentines-images-container").innerHTML += 
             "<img src=\"" + heartHotAirImagePath + "\" id=\"heart-hot-air-image\">"
-
-        heartLetterImagePath = getExtensionURL('valentines/heart-letter.png')
-        document.getElementById("valentines-images-container").innerHTML += 
-            "<img src=\"" + heartLetterImagePath + "\" id=\"heart-letter-image\">"
-
-        milkShakeImagePath = getExtensionURL('valentines/milk-shake.png')
-        document.getElementById("valentines-images-container").innerHTML += 
-            "<img src=\"" + milkShakeImagePath + "\" id=\"milk-shake-image\">"
 
         valentinesDayImagePath = getExtensionURL('valentines/valentines-day.gif')
         document.getElementById("valentines-images-container").innerHTML += 
