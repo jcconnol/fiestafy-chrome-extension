@@ -1,0 +1,74 @@
+#valentines-images-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    pointer-events: none;
+}
+
+#arrow-heart-image {
+    position: fixed;
+    right: 0px;
+    height: 15%;
+    pointer-events: none;
+}
+
+@keyframes santa-animation
+{
+    0% {
+        left: 200%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    50% {
+        left: -100%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    51% {
+        left: -100%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+    100% {
+        left: 200%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+}
+
+#arrow-image {
+    position: fixed;
+    height: 25%;
+    bottom: 35%;
+    left: -100%;
+    animation: santa-animation 10s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+#heart-balloon-image {
+    position: fixed;
+    left: 0px;
+    top: 2%;
+    height: 25%;
+    pointer-events: none;
+}
+
+#heart-banner-image {
+    position: fixed;
+    left: -5%;
+    
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 15%;
+    pointer-events: none;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 110%;
+}

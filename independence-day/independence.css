@@ -1,0 +1,10 @@
+#independence-images-container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 100000;
+    pointer-events: none;
+}
