@@ -17,7 +17,7 @@
     pointer-events: none;
 }
 
-@keyframes santa-animation
+@keyframes valentines-animation
 {
     0% {
         left: 200%;
@@ -41,12 +41,36 @@
     }
 }
 
+@keyframes balloon-animation
+{
+    0% {
+        left: 100%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    50% {
+        left: -10%;
+        -webkit-transform: scaleX(100%);
+        transform: scaleX(100%);
+    }
+    51% {
+        left: -10%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+    100% {
+        left: 100%;
+        -webkit-transform: scaleX(-100%);
+        transform: scaleX(-100%);
+    }
+}
+
 #arrow-image {
     position: fixed;
     height: 25%;
     bottom: 35%;
     left: -100%;
-    animation: santa-animation 10s;
+    animation: valentines-animation 10s;
     animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -87,6 +111,7 @@
     bottom: 30%;
     height: 35%;
     pointer-events: none;
+    z-index: 10000;
 }
 
 #heart-gun-image {
@@ -108,4 +133,20 @@
     margin-left: 1%;
     margin-right: 1%;
     width: 100%;
+}
+
+#heart-hot-air-image {
+    position: fixed;
+    height: 15%;
+    bottom: 65%;
+    animation: balloon-animation 160s;
+    animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    z-index: 10000000;
+}
+
+#valentines-day-image {
+    z-index: 10000000;
 }
