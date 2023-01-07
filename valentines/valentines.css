@@ -12,6 +12,7 @@
 #arrow-heart-image {
     position: fixed;
     right: 0px;
+    top: 5%;
     height: 15%;
     pointer-events: none;
 }
@@ -55,7 +56,7 @@
 #heart-balloon-image {
     position: fixed;
     left: 0px;
-    top: 2%;
+    top: 5%;
     height: 25%;
     pointer-events: none;
 }
@@ -63,7 +64,6 @@
 #heart-banner-image {
     position: fixed;
     left: -5%;
-    
     background-size: contain;
     background-repeat: repeat-x;
     height: 15%;
