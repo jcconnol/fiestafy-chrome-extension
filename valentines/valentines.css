@@ -9,7 +9,7 @@
     pointer-events: none;
 }
 
-#arrow-heart-image {
+#valentines-images-container #arrow-heart-image {
     position: fixed;
     right: 0px;
     top: 5%;
@@ -65,7 +65,7 @@
     }
 }
 
-#arrow-image {
+#valentines-images-container #arrow-image {
     position: fixed;
     height: 25%;
     bottom: 35%;
@@ -77,7 +77,7 @@
     -o-animation-iteration-count: infinite;
 }
 
-#heart-balloon-image {
+#valentines-images-container #heart-balloon-image {
     position: fixed;
     left: 0px;
     top: 5%;
@@ -85,7 +85,7 @@
     pointer-events: none;
 }
 
-#heart-banner-image {
+#valentines-images-container #heart-banner-image {
     position: fixed;
     left: -5%;
     background-size: contain;
@@ -97,7 +97,7 @@
     width: 110%;
 }
 
-#milk-shake-image {
+#valentines-images-container #milk-shake-image {
     position: fixed;
     left: -7%;
     bottom: 0;
@@ -105,7 +105,7 @@
     pointer-events: none;
 }
 
-#heart-letter-image {
+#valentines-images-container #heart-letter-image {
     position: fixed;
     right: 0;
     bottom: 30%;
@@ -114,7 +114,7 @@
     z-index: 10000;
 }
 
-#heart-gun-image {
+#valentines-images-container #heart-gun-image {
     position: fixed;
     left: 0;
     top: 20%;
@@ -122,7 +122,7 @@
     pointer-events: none;
 }
 
-#heart-garden-image {
+#valentines-images-container #heart-garden-image {
     position: fixed;
     left: 15%;
     bottom: 0;
@@ -135,7 +135,7 @@
     width: 100%;
 }
 
-#heart-hot-air-image {
+#valentines-images-container #heart-hot-air-image {
     position: fixed;
     height: 15%;
     bottom: 65%;
@@ -147,6 +147,6 @@
     z-index: 10000000;
 }
 
-#valentines-day-image {
+#valentines-images-container #valentines-day-image {
     z-index: 10000000;
 }

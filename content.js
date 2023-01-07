@@ -180,40 +180,57 @@ function runIndependenceDay(){
     document.body.appendChild(newDiv);
 
     if (holidayRange >= 1) {
-        fireworkImagePath = getExtensionURL('independence-day/firework.png')
+        fireworkImagePath = getExtensionURL('independence-day/fireworks.gif')
         document.getElementById("independence-images-container").innerHTML += 
-            "<img src=\"" + fireworkImagePath + "\" id=\"firework-image\">"
+            "<img src=\"" + fireworkImagePath + "\" id=\"firework-image-1\">"
+
+        fireworkImagePath = getExtensionURL('independence-day/fireworks.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + fireworkImagePath + "\" id=\"firework-image-2\">"
+
+        firework2ImagePath = getExtensionURL('independence-day/firework-2.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + firework2ImagePath + "\" id=\"firework-2-image\">"
     }
 
-    firework2ImagePath = getExtensionURL('independence-day/firework-2.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + fireworkImagePath + "\" id=\"firework-2-image\">"
+    if (holidayRange >= 2) {
+        usaBannerImagePath = getExtensionURL('independence-day/usa-banner.png')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<div id=\"usa-banner-image\"></div>"
+        document.getElementById("usa-banner-image").style.backgroundImage = "url(" + usaBannerImagePath + ")"
 
-    goldBannerImagePath = getExtensionURL('independence-day/gold-banner.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + goldBannerImagePath + "\" id=\"gold-banner-image\">"
+        sparklerImagePath = getExtensionURL('independence-day/sparkler.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + sparklerImagePath + "\" id=\"sparkler-image\">"
+    }
 
-    kiteImagePath = getExtensionURL('independence-day/kite.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + kiteImagePath + "\" id=\"kite-image\">"
+    if (holidayRange >= 3) {
+        goldBannerImagePath = getExtensionURL('independence-day/gold-banner.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + goldBannerImagePath + "\" id=\"gold-banner-image\">"
 
-    sparkePlumeImagePath = getExtensionURL('independence-day/sparkle-plume.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + sparkePlumeImagePath + "\" id=\"sparkle-plume-image\">"
+        sparkePlume1ImagePath = getExtensionURL('independence-day/sparkle-plume.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + sparkePlume1ImagePath + "\" id=\"sparkle-plume-1-image\">"
 
-    sparklerImagePath = getExtensionURL('independence-day/sparkler.gif')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + sparklerImagePath + "\" id=\"sparkler-image\">"
+        sparkePlume2ImagePath = getExtensionURL('independence-day/sparkle-plume.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + sparkePlume2ImagePath + "\" id=\"sparkle-plume-2-image\">"
+    }
 
-    spiralImagePath = getExtensionURL('independence-day/spiral.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + spiralImagePath + "\" id=\"spiral-image\">"
+    if (holidayRange >= 4) {
+        kiteImagePath = getExtensionURL('independence-day/kite.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + kiteImagePath + "\" id=\"kite-image\">"
 
-    usaBannerImagePath = getExtensionURL('independence-day/usa-banner.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + usaBannerImagePath + "\" id=\"usa-banner-image\">"
+        spiralImagePath = getExtensionURL('independence-day/spiral.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + spiralImagePath + "\" id=\"spiral-image\">"
+    }
 
-    wavingFlagImagePath = getExtensionURL('independence-day/waving-flag.png')
-    document.getElementById("independence-images-container").innerHTML += 
-        "<img src=\"" + wavingFlagImagePath + "\" id=\"waving-flag-image\">"
+    if (holidayRange >= 5) {
+        wavingFlagImagePath = getExtensionURL('independence-day/waving-flag.gif')
+        document.getElementById("independence-images-container").innerHTML += 
+            "<img src=\"" + wavingFlagImagePath + "\" id=\"waving-flag-image\">"
+    }
 }
